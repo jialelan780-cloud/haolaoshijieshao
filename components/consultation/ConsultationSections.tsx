@@ -56,9 +56,10 @@ export function HeroNationalMap() {
     >
       <div className="c-section-inner">
         <div className="c-map-heading">
-          <span className="c-eyebrow">从全国积累，到浙江课堂</span>
+          <span className="c-eyebrow">好老师教育 · 全国升学版图</span>
           <h1 id="national-title">
-            好老师教育 · <em>全国升学版图</em>
+            <span>升本就一次，</span>
+            <em>就选好老师</em>
           </h1>
           <p>深耕升学教育，让更多学生拥有改变学历与未来的机会。</p>
         </div>

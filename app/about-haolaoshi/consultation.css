@@ -282,6 +282,10 @@
   font-style: normal;
   color: var(--c-blue);
 }
+.c-map-heading h1 > span,
+.c-map-heading h1 > em {
+  display: inline-block;
+}
 .c-map-heading p {
   color: var(--c-muted);
   margin-top: 10px;

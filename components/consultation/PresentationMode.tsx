@@ -162,8 +162,8 @@ export default function PresentationMode({
             <ChapterLink to="national" className="c-brand">
               <BrandMark />
               <span className="c-brand-caption">
-                <strong>浙江专升本</strong>
-                <small>可视化升学说明书</small>
+                <strong>升本就一次，就选好老师</strong>
+                <small>浙江专升本 · 可视化升学说明书</small>
               </span>
             </ChapterLink>
             <div className="c-mode-switch" aria-label="浏览模式">
