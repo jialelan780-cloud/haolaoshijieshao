@@ -12,3 +12,6 @@ next-env.d.ts
 
 # 大体积视频：不纳入 Git（文件仍在磁盘、页面本地可播）。上线请改用对象存储/视频平台外链。
 /public/haolaoshi-assets/videos/*.mp4
+
+# 独立生产构建缓存
+/.next-production

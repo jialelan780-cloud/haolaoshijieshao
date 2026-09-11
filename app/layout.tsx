@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./promo.css";
 
 export const metadata: Metadata = {
-  title: "浙江专升本 · 数学名师展示",
+  title: "好老师升学帮 · 浙江专升本",
   description:
-    "浙江专升本数学教学团队，专注高等数学提分与上岸。了解乔老师、周老师的带教经验、教学风格与学员成果。",
+    "了解好老师升学帮浙江滨江校区的师资、AI智能学习、课程安排、集训住宿和状元班服务。",
 };
 
 export default function RootLayout({
