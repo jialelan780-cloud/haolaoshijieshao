@@ -45,8 +45,8 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  border-bottom: 1px solid var(--c-line);
-  background: #ffffffef;
+  border-bottom: 1px solid #e5ebf3;
+  background: #fffffffa;
   backdrop-filter: blur(15px);
   position: sticky;
   top: 0;
@@ -55,27 +55,41 @@
 .c-brand {
   display: flex;
   align-items: center;
-  gap: 26px;
+  gap: 25px;
   min-width: 0;
+  text-decoration: none;
 }
 .c-brand-logo {
   display: block;
-  width: 210px;
+  width: 230px;
   max-width: 100%;
   height: auto;
-  object-fit: contain;
+  flex-shrink: 0;
 }
 .c-brand > span {
-  border-left: 1px solid #d3ddea;
-  padding-left: 24px;
+  border-left: 1px solid #dbe3ee;
+  padding-left: 25px;
+  display: grid;
+  gap: 3px;
+  white-space: nowrap;
+}
+.c-brand-caption strong {
   font-size: 0.8125rem;
-  color: var(--c-muted);
+  font-weight: 550;
+  color: #3e526f;
+  letter-spacing: 0.12em;
+}
+.c-brand-caption small {
+  font-size: 0.6875rem;
+  color: #8390a4;
+  letter-spacing: 0.06em;
 }
 .c-mode-switch {
-  padding: 4px;
+  padding: 3px;
   display: flex;
-  border-radius: 7px;
-  background: #edf2f9;
+  border: 1px solid #e4eaf2;
+  border-radius: 6px;
+  background: #f8fafd;
   flex-shrink: 0;
 }
 .c-mode-switch button {
@@ -87,7 +101,7 @@
 .c-mode-switch button[aria-pressed="true"] {
   background: var(--c-navy);
   color: white;
-  box-shadow: 0 2px 5px #15294412;
+  box-shadow: 0 2px 4px #15294414;
 }
 .c-mode-switch button > span {
   margin-left: 6px;
@@ -2070,7 +2084,10 @@
     gap: 12px;
   }
   .c-brand {
-    width: 165px;
+    width: 172px;
+  }
+  .c-brand-logo {
+    width: 100%;
   }
   .c-mode-switch {
     padding: 3px;

@@ -39,6 +39,9 @@ npm run dev
 | `components/consultation/ConsultationSections.tsx` | 全国地图、学历比较、政策、服务、师资、APP、三年时间轴 |
 | `components/consultation/PresentationMode.tsx` | 浏览 / 演示模式、章节导航、键盘与阅读位置恢复 |
 | `components/consultation/LightboxGallery.tsx` | 统一图片预览、页内文档、内容弹窗 |
+| `components/consultation/BrandMark.tsx` | 页头内联矢量标志，蓝白字形与阶梯细节 |
+| `data/brandWordmark.ts` | 品牌字形路径，确保不同设备显示一致 |
+| `public/promo/haolaoshi-wordmark.svg` | 可独立使用与缩放的矢量标志 |
 | `components/consultation/BrandAdvantages.tsx` | 八项品牌优势、对应原图、品牌名片与现场视频 |
 | `components/consultation/MajorPathExplorer.tsx` | 三校专业搜索、类别和科目、原院校查询入口 |
 | `components/consultation/ControlLineChart.tsx` | 类别 / 年份交互图表、完整省控线与来源 |

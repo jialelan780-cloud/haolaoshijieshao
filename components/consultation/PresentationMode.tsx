@@ -10,6 +10,7 @@ import {
 } from "react";
 import { chapters } from "@/data/consultation";
 import { LightboxProvider } from "./LightboxGallery";
+import BrandMark from "./BrandMark";
 const NavigationContext = createContext<(id: string) => void>(() => {});
 export function ChapterLink({
   to,
@@ -159,14 +160,11 @@ export default function PresentationMode({
           </a>
           <header className="c-header">
             <ChapterLink to="national" className="c-brand">
-              <img
-                className="c-brand-logo"
-                src="/promo/haolaoshi-logo.png"
-                alt="好老师升学帮"
-                width={315}
-                height={78}
-              />
-              <span>浙江专升本 · 可视化升学说明书</span>
+              <BrandMark />
+              <span className="c-brand-caption">
+                <strong>浙江专升本</strong>
+                <small>可视化升学说明书</small>
+              </span>
             </ChapterLink>
             <div className="c-mode-switch" aria-label="浏览模式">
               <button
