@@ -3940,6 +3940,888 @@
   font-weight: 600;
   text-decoration: none;
 }
+
+/* Course comparison is part of the final consultation chapter. */
+.c-enrollment {
+  --enroll-muted: #b9cbea;
+}
+.c-enrollment .c-guide-nav {
+  background: #102d66f5;
+  border-color: #ffffff25;
+  margin-top: 0;
+}
+.c-enrollment .c-guide-nav a {
+  color: #e6edf9;
+}
+.c-enrollment .c-guide-nav a:hover {
+  background: #ffffff10;
+}
+.c-enrollment .c-guide-nav span,
+.c-enrollment .c-guide-nav b {
+  color: #a8c0e5;
+}
+.c-enroll-section,
+.c-enroll-tools {
+  scroll-margin-top: 160px;
+  padding-top: 38px;
+}
+.c-enroll-section + .c-enroll-section {
+  margin-top: 16px;
+}
+.c-enroll-heading {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+.c-enroll-heading > span {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  border: 1px solid #6983ae;
+  border-radius: 50%;
+  color: #d6be89;
+  font-size: 0.75rem;
+  margin-top: 2px;
+}
+.c-enroll-heading h3 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #f5f8ff;
+  font-weight: 600;
+}
+.c-enroll-heading p {
+  color: #b9cbea;
+  font-size: 0.9375rem;
+  margin-top: 8px;
+  line-height: 1.9;
+}
+.c-enroll-common {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+.c-enroll-common article {
+  border: 1px solid #ffffff22;
+  border-radius: 10px;
+  background: #ffffff08;
+  padding: 24px;
+}
+.c-enroll-common article > span {
+  color: #d9bd7e;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+}
+.c-enroll-common h4 {
+  margin: 14px 0 10px;
+  color: #f7f9ff;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  font-weight: 600;
+}
+.c-enroll-common strong {
+  display: block;
+  color: #cddcf2;
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+.c-enroll-common p {
+  margin-top: 10px;
+  color: #b0c3e2;
+  font-size: 0.8125rem;
+  line-height: 1.9;
+}
+.c-enroll-camps {
+  padding: 28px;
+  border-radius: 12px;
+  background: #f3f6fc;
+  color: #234778;
+  margin-top: 20px;
+}
+.c-enroll-camps-heading {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 25px;
+}
+.c-enroll-camps-heading > span {
+  color: #617a9f;
+  font-size: 0.75rem;
+}
+.c-enroll-camps h4 {
+  font-size: 1.125rem;
+  margin: 0;
+  font-weight: 600;
+}
+.c-enroll-camps ol {
+  margin: 22px 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style: none;
+  gap: 16px;
+}
+.c-enroll-camps li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: white;
+  border: 1px solid #dce6f4;
+  padding: 16px 20px;
+  border-radius: 8px;
+}
+.c-enroll-camps li > span {
+  color: #92a8c7;
+  font-size: 1.375rem;
+  font-weight: 350;
+}
+.c-enroll-camps li small {
+  display: block;
+  font-size: 0.75rem;
+  color: #6981a3;
+}
+.c-enroll-camps li strong {
+  display: block;
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+.c-enroll-camp-rules {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  border-top: 1px solid #d7e2f0;
+  padding-top: 18px;
+}
+.c-enroll-camp-rules p {
+  font-size: 0.8125rem;
+  color: #577297;
+  line-height: 1.9;
+}
+.c-enroll-camp-rules p > span {
+  margin-right: 12px;
+}
+.c-enroll-camp-rules strong {
+  color: #214d92;
+  font-size: 0.9375rem;
+}
+.c-enroll-comparison-wrap {
+  background: white;
+  color: #264571;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #dce6f4;
+}
+.c-enroll-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: 0.8125rem;
+}
+.c-enroll-table caption {
+  color: #566f94;
+  text-align: left;
+  padding: 15px 20px;
+  font-size: 0.75rem;
+  background: #f6f8fc;
+}
+.c-enroll-table th,
+.c-enroll-table td {
+  padding: 20px 14px;
+  vertical-align: top;
+  text-align: left;
+  border-bottom: 1px solid #e4ebf5;
+  border-right: 1px solid #e8eef6;
+}
+.c-enroll-table th:last-child,
+.c-enroll-table td:last-child {
+  border-right: 0;
+}
+.c-enroll-table th:first-child {
+  width: 135px;
+  color: #617693;
+  background: #f9fbfd;
+  font-weight: 550;
+}
+.c-enroll-table thead th {
+  background: #edf2fa;
+}
+.c-enroll-table thead th:first-child {
+  vertical-align: bottom;
+  padding-bottom: 24px;
+  background: #edf2fa;
+}
+.c-enroll-table thead strong {
+  display: block;
+  font-size: clamp(1.25rem, 1.7vw, 1.625rem);
+  white-space: nowrap;
+  color: #244e8c;
+  font-weight: 550;
+  letter-spacing: -0.04em;
+  margin-top: 5px;
+}
+.c-enroll-table thead small {
+  display: block;
+  font-size: 0.75rem;
+  line-height: 1.75;
+  font-weight: 500;
+  color: #526f96;
+  margin-top: 8px;
+  min-height: 42px;
+}
+.c-enroll-plan-tag {
+  display: block;
+  color: #5075a7;
+  font-size: 0.625rem;
+  font-weight: 500;
+  min-height: 18px;
+  white-space: nowrap;
+}
+.c-enroll-table tbody strong {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.75;
+  color: #254c84;
+}
+.c-enroll-table tbody small {
+  display: block;
+  font-size: 0.6875rem;
+  line-height: 1.85;
+  color: #7185a1;
+  margin-top: 7px;
+}
+.c-enroll-table tr:last-child > * {
+  border-bottom: 0;
+}
+.c-enroll-table thead .is-recommended {
+  background: #e1ebfb;
+  box-shadow: inset 0 3px #315fa9;
+}
+.c-enroll-table tbody .is-recommended {
+  background: #f0f5fe;
+}
+.c-enroll-mobile-plans {
+  display: none;
+}
+.c-enroll-differences {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 20px;
+}
+.c-enroll-differences article {
+  background: #ffffff09;
+  border-top: 1px solid #ffffff30;
+  padding: 22px;
+  border-radius: 0 0 8px 8px;
+}
+.c-enroll-differences article > span {
+  display: block;
+  color: #d5bd89;
+  font-size: 0.8125rem;
+  letter-spacing: 0.04em;
+}
+.c-enroll-differences h4 {
+  color: #e8effa;
+  font-size: 1rem;
+  margin: 12px 0 8px;
+  font-weight: 600;
+}
+.c-enroll-differences p {
+  color: #b8cbe7;
+  font-size: 0.8125rem;
+  line-height: 1.9;
+}
+.c-enroll-source {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.c-enroll-source p {
+  color: #a5bcdd;
+  font-size: 0.75rem;
+  max-width: 920px;
+  line-height: 1.9;
+}
+.c-enroll-source button {
+  flex-shrink: 0;
+  color: #e9d5a7;
+  font-size: 0.8125rem;
+  padding: 0;
+  background: none;
+  border: 0;
+}
+.c-enroll-recommendation {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  align-items: center;
+  gap: 32px;
+  margin: 14px 0 30px;
+  padding: 0 0 28px;
+}
+.c-enroll-recommendation > div > span {
+  display: block;
+  color: #dbc591;
+  font-size: 0.8125rem;
+  margin-bottom: 12px;
+}
+.c-enroll-recommendation h3 {
+  color: #f6f9ff;
+  font-size: clamp(1.5rem, 2.2vw, 2rem);
+  font-weight: 550;
+  line-height: 1.6;
+}
+.c-enroll-recommendation p {
+  color: #bed0eb;
+  margin-top: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.9;
+}
+.c-enroll-recommendation-number {
+  padding-left: 30px;
+  border-left: 1px solid #ffffff30;
+}
+.c-enroll-recommendation-number > strong {
+  display: block;
+  font-size: 5.25rem;
+  font-weight: 350;
+  line-height: 1.2;
+  letter-spacing: -0.055em;
+  color: #f0d49c;
+}
+.c-enroll-recommendation-number strong > span {
+  font-size: 1rem;
+  margin-left: 10px;
+  letter-spacing: 0;
+}
+.c-enroll-recommendation-number p {
+  font-size: 0.8125rem;
+}
+.c-enroll-planner {
+  background: #f6f8fd;
+  border-radius: 14px;
+  color: #2b4e7e;
+  padding: 30px;
+}
+.c-enroll-planner-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+}
+.c-enroll-planner-heading > div > span {
+  color: #577cac;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+}
+.c-enroll-planner-heading h3 {
+  font-size: 1.75rem;
+  font-weight: 650;
+  margin-top: 9px;
+  color: #1f447d;
+}
+.c-enroll-planner-heading p {
+  color: #5d7699;
+  font-size: 0.875rem;
+  margin-top: 8px;
+}
+.c-enroll-planner-heading > strong {
+  font-size: 0.8125rem;
+  font-weight: 550;
+  color: #5477a5;
+}
+.c-enroll-months {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border-top: 1px solid #bfd0e8;
+  margin-top: 34px;
+  padding-top: 12px;
+  color: #6480a5;
+  font-size: 0.75rem;
+}
+.c-enroll-months span {
+  position: relative;
+}
+.c-enroll-months span::before {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #7195c4;
+}
+.c-enroll-timeline {
+  padding: 0;
+  margin: 26px 0 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+.c-enroll-timeline > li {
+  padding: 20px;
+  border: 1px solid #dce5f2;
+  border-top: 3px solid #6289c0;
+  background: white;
+  border-radius: 0 0 8px 8px;
+}
+.c-enroll-timeline > li:nth-child(3) {
+  border-top-color: #c6a459;
+  background: #fffdf7;
+}
+.c-enroll-timeline-date {
+  display: flex;
+  gap: 9px;
+  min-height: 45px;
+  align-items: flex-start;
+}
+.c-enroll-timeline-date > span {
+  color: #8ca4c4;
+  font-size: 0.6875rem;
+}
+.c-enroll-timeline-date strong {
+  color: #4d70a0;
+  font-size: 0.75rem;
+  font-weight: 550;
+  line-height: 1.8;
+}
+.c-enroll-timeline h4 {
+  font-size: 1.125rem;
+  color: #254a83;
+  font-weight: 650;
+  margin: 9px 0 11px;
+}
+.c-enroll-stage-badge {
+  font-size: 0.625rem;
+  color: #5076a7;
+  background: #edf3fc;
+  padding: 4px 7px;
+  display: inline-block;
+  border-radius: 4px;
+}
+.c-enroll-timeline p {
+  color: #597293;
+  font-size: 0.8125rem;
+  line-height: 1.9;
+  margin-top: 16px;
+}
+.c-enroll-timeline ul {
+  padding-left: 15px;
+  margin: 14px 0 0;
+  list-style: disc;
+  color: #68809e;
+  font-size: 0.75rem;
+  line-height: 1.9;
+}
+.c-enroll-timeline ul li {
+  margin: 6px 0;
+}
+.c-enroll-timeline ul li::marker {
+  color: #87a4c9;
+}
+.c-enroll-paper-breakdown {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: center;
+  gap: 30px;
+  background: #e6edf8;
+  border-radius: 10px;
+  margin-top: 22px;
+  padding: 23px 28px;
+}
+.c-enroll-paper-breakdown > div {
+  border-right: 1px solid #cbd9ec;
+}
+.c-enroll-paper-breakdown > div > span {
+  display: block;
+  color: #607ba0;
+  font-size: 0.75rem;
+}
+.c-enroll-paper-breakdown strong {
+  font-size: 2.25rem;
+  color: #2c579c;
+  font-weight: 450;
+}
+.c-enroll-paper-breakdown strong small {
+  font-size: 0.8125rem;
+  color: #496c9c;
+  margin-left: 10px;
+}
+.c-enroll-paper-breakdown p {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 18px;
+}
+.c-enroll-paper-breakdown p b {
+  color: #92a8c5;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.c-enroll-planner-note {
+  margin-top: 20px;
+  color: #6d82a0;
+  font-size: 0.75rem;
+  line-height: 1.9;
+}
+.c-enroll-planner-note a {
+  display: inline-block;
+  color: #4f73a4;
+  margin-top: 8px;
+  text-underline-offset: 3px;
+}
+.c-enroll-longer {
+  margin-top: 25px;
+  padding: 24px 28px;
+  border: 1px solid #ffffff28;
+  border-radius: 10px;
+}
+.c-enroll-longer > span {
+  color: #d6bc83;
+  font-size: 0.75rem;
+}
+.c-enroll-longer h4 {
+  font-size: 1.125rem;
+  font-weight: 550;
+  color: #eef4ff;
+  margin: 10px 0;
+}
+.c-enroll-longer p {
+  color: #b5c9e6;
+  font-size: 0.875rem;
+  line-height: 1.9;
+}
+.c-enroll-tools {
+  margin-top: 28px;
+  border-top: 1px solid #ffffff25;
+}
+.c-enroll-tools .c-action-grid {
+  margin-top: 24px;
+}
+.is-presenting .c-enroll-section,
+.is-presenting .c-enroll-tools {
+  scroll-margin-top: 80px;
+}
+@media (max-width: 1200px) {
+  .c-enroll-common {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  .c-enroll-table th,
+  .c-enroll-table td {
+    padding: 17px 10px;
+  }
+  .c-enroll-table th:first-child {
+    width: 112px;
+  }
+  .c-enroll-table thead strong {
+    font-size: 1.1875rem;
+  }
+  .c-enroll-table tbody strong {
+    font-size: 0.8125rem;
+  }
+  .c-enroll-plan-tag {
+    font-size: 0.5625rem;
+  }
+  .c-enroll-camps li {
+    padding: 16px;
+    gap: 12px;
+  }
+  .c-enroll-timeline {
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+  .c-enroll-timeline-date {
+    min-height: auto;
+  }
+}
+@media (max-width: 1040px) {
+  .c-enroll-comparison-wrap {
+    display: none;
+  }
+  .c-enroll-mobile-plans {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+  .c-enroll-mobile-plans article {
+    background: white;
+    border-radius: 10px;
+    color: #234875;
+    padding: 22px;
+    border: 2px solid transparent;
+  }
+  .c-enroll-mobile-plans article.is-recommended {
+    background: #f1f6ff;
+    border-color: #7fa5dc;
+  }
+  .c-enroll-mobile-plans header {
+    display: flex;
+    gap: 14px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .c-enroll-mobile-plans header span {
+    font-size: 0.75rem;
+    color: #5a7aa4;
+  }
+  .c-enroll-mobile-plans header h4 {
+    margin: 6px 0 0;
+    font-size: 1.875rem;
+    color: #2b5598;
+    font-weight: 550;
+    letter-spacing: -0.04em;
+  }
+  .c-enroll-mobile-plans header b {
+    max-width: 115px;
+    font-size: 0.625rem;
+    font-weight: 550;
+    color: #55739c;
+    line-height: 1.7;
+    padding: 4px 7px;
+    background: #eaf1fc;
+    border-radius: 4px;
+  }
+  .c-enroll-mobile-plans dl {
+    margin: 18px 0 0;
+    font-size: 0.8125rem;
+  }
+  .c-enroll-mobile-plans dl > div {
+    display: grid;
+    grid-template-columns: 105px 1fr;
+    gap: 14px;
+    padding: 13px 0;
+    border-top: 1px solid #e1e9f4;
+  }
+  .c-enroll-mobile-plans dt {
+    color: #6f83a0;
+  }
+  .c-enroll-mobile-plans dd {
+    margin: 0;
+  }
+  .c-enroll-mobile-plans dd strong {
+    font-weight: 550;
+  }
+  .c-enroll-mobile-plans dd small {
+    display: block;
+    font-size: 0.6875rem;
+    color: #7b8da7;
+    line-height: 1.8;
+    margin-top: 4px;
+  }
+  .c-enroll-differences {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .c-enroll-camp-rules {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .c-enroll-recommendation {
+    grid-template-columns: 1fr 170px;
+  }
+  .c-enroll-recommendation-number > strong {
+    font-size: 4.25rem;
+  }
+  .c-enroll-paper-breakdown {
+    grid-template-columns: 160px 1fr;
+    gap: 22px;
+  }
+  .c-enroll-paper-breakdown strong small {
+    display: block;
+    margin: 0;
+  }
+  .c-enroll-paper-breakdown > div strong small {
+    display: inline-block;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 680px) {
+  .c-enroll-section,
+  .c-enroll-tools {
+    padding-top: 28px;
+    scroll-margin-top: 176px;
+  }
+  .c-enroll-heading {
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+  .c-enroll-heading > span {
+    width: 28px;
+    height: 28px;
+    font-size: 0.6875rem;
+  }
+  .c-enroll-heading h3 {
+    font-size: 1.25rem;
+  }
+  .c-enroll-heading p {
+    font-size: 0.875rem;
+  }
+  .c-enroll-common {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .c-enroll-common article {
+    padding: 20px;
+  }
+  .c-enroll-common h4 {
+    margin-top: 9px;
+  }
+  .c-enroll-camps {
+    padding: 20px;
+  }
+  .c-enroll-camps-heading {
+    display: block;
+  }
+  .c-enroll-camps-heading h4 {
+    margin-top: 7px;
+    font-size: 1.0625rem;
+  }
+  .c-enroll-camps ol {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .c-enroll-camps li {
+    gap: 9px;
+    padding: 12px;
+  }
+  .c-enroll-camps li > span {
+    font-size: 1.0625rem;
+  }
+  .c-enroll-camps li strong {
+    font-size: 0.8125rem;
+  }
+  .c-enroll-camp-rules p > span {
+    display: block;
+    margin-right: 0;
+  }
+  .c-enroll-mobile-plans {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .c-enroll-source {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .c-enroll-recommendation {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding-bottom: 0;
+  }
+  .c-enroll-recommendation h3 {
+    font-size: 1.4rem;
+  }
+  .c-enroll-recommendation h3 br {
+    display: none;
+  }
+  .c-enroll-recommendation p {
+    font-size: 0.875rem;
+  }
+  .c-enroll-recommendation-number {
+    padding: 20px 0 0;
+    border-left: 0;
+    border-top: 1px solid #ffffff25;
+    display: flex;
+    align-items: center;
+    gap: 26px;
+  }
+  .c-enroll-recommendation-number > strong {
+    font-size: 3.75rem;
+  }
+  .c-enroll-recommendation-number p {
+    margin-top: 0;
+    font-size: 0.75rem;
+  }
+  .c-enroll-planner {
+    padding: 20px;
+  }
+  .c-enroll-planner-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .c-enroll-planner-heading h3 {
+    font-size: 1.375rem;
+  }
+  .c-enroll-planner-heading p {
+    font-size: 0.8125rem;
+  }
+  .c-enroll-planner-heading > strong {
+    font-size: 0.75rem;
+  }
+  .c-enroll-months {
+    font-size: 0.625rem;
+    margin-top: 28px;
+  }
+  .c-enroll-months span:last-child {
+    text-align: right;
+  }
+  .c-enroll-timeline {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-top: 22px;
+  }
+  .c-enroll-timeline > li {
+    padding: 18px;
+    border-top: 1px solid #dce5f2;
+    border-left: 3px solid #6289c0;
+    border-radius: 0 8px 8px 0;
+  }
+  .c-enroll-timeline > li:nth-child(3) {
+    border-top-color: #dce5f2;
+    border-left-color: #c6a459;
+  }
+  .c-enroll-timeline h4 {
+    margin-top: 12px;
+  }
+  .c-enroll-timeline-date > span {
+    width: 20px;
+  }
+  .c-enroll-stage-badge {
+    font-size: 0.6875rem;
+  }
+  .c-enroll-timeline ul {
+    font-size: 0.8125rem;
+  }
+  .c-enroll-paper-breakdown {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 18px;
+  }
+  .c-enroll-paper-breakdown > div {
+    border-right: 0;
+    border-bottom: 1px solid #cbd9ec;
+    padding-bottom: 13px;
+  }
+  .c-enroll-paper-breakdown strong {
+    font-size: 2rem;
+  }
+  .c-enroll-paper-breakdown p {
+    gap: 9px;
+    justify-content: space-between;
+  }
+  .c-enroll-paper-breakdown strong small {
+    font-size: 0.6875rem;
+  }
+  .c-enroll-paper-breakdown p b {
+    font-size: 0.875rem;
+  }
+  .c-enroll-longer {
+    padding: 20px;
+  }
+  .c-enroll-longer h4 {
+    font-size: 1rem;
+  }
+  .c-enroll-longer p {
+    font-size: 0.8125rem;
+  }
+}
 .c-guide-comparison {
   border: 1px solid #dfe6f0;
   border-radius: 12px;

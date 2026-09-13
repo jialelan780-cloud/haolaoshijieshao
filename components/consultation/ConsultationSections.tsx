@@ -6,7 +6,8 @@ import {
 } from "@/data/consultation";
 import { honorClasses, honorServices } from "@/data/promo";
 import FeedbackGallery from "./FeedbackGallery";
-import { AiLearning, CoursePlans } from "@/components/PromoInteractive";
+import { holidayCampStages } from "@/data/courseComparison";
+import { AiLearning } from "@/components/PromoInteractive";
 import { GalleryTrigger, InlineDocument, InlinePanel } from "./LightboxGallery";
 import { ChapterLink } from "./PresentationMode";
 import type { ReactNode } from "react";
@@ -420,8 +421,12 @@ export function ThreeYearPlan() {
         </p>
       </div>
       <div className="c-six-stages">
-        <span>三年 6 个集训阶段</span>
-        <p>大一寒假 → 大一暑假 → 大二寒假 → 大二暑假 → 大三寒假 → 考前冲刺</p>
+        <span>四个寒暑假集训阶段</span>
+        <p>
+          {holidayCampStages
+            .map((camp) => `${camp.year}${camp.season}`)
+            .join(" → ")}
+        </p>
       </div>
       <div className="c-three-year-links">
         <ChapterLink to="schedule" className="c-text-button">
@@ -430,16 +435,16 @@ export function ThreeYearPlan() {
         <ChapterLink to="campus" className="c-text-button">
           集训住宿实拍 →
         </ChapterLink>
-        <InlinePanel title="2026班型与服务费用" label="比较班型与费用">
-          <CoursePlans />
-        </InlinePanel>
+        <ChapterLink to="next-step" className="c-text-button">
+          六档班型对比与120天考前规划 →
+        </ChapterLink>
         <InlineDocument
           url="/promo/three-year-course.pdf"
           title="三年课程图解"
         />
       </div>
       <p className="c-footnote">
-        从大一报名至考前，对应课程可循环学习；课程范围、轮次与课时权益按所选班型及合同约定。
+        15800／18800元档的四个阶段集训任选三个；21800元及以上四个全含。考前集中学习周期另按班型安排，具体课程与服务权益以合同为准。
       </p>
     </>
   );

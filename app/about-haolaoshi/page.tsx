@@ -15,6 +15,7 @@ import BrandAdvantages from "@/components/consultation/BrandAdvantages";
 import MajorPathExplorer from "@/components/consultation/MajorPathExplorer";
 import ControlLineChart from "@/components/consultation/ControlLineChart";
 import PlanningTools from "@/components/consultation/PlanningTools";
+import CourseComparison from "@/components/consultation/CourseComparison";
 import {
   CourseScheduleOverview,
   CampusStayOverview,
@@ -122,11 +123,21 @@ export default function AboutHaolaoshiPage() {
       </ConsultationSection>
       <ConsultationSection
         index={13}
-        title="你的升本规划，可以从今天开始"
-        description="找到方向，了解基础，再把接下来的学习安排清楚。"
+        title="选好班型，把接下来的学习安排清楚"
+        description="先看共同课程，再比较集训和服务，最后结合自己的基础与时间确定学习规划。"
         className="c-final-section"
       >
-        <PlanningTools />
+        <CourseComparison />
+        <div className="c-enroll-tools" id="next-step-tools">
+          <div className="c-enroll-heading">
+            <span>04</span>
+            <div>
+              <h3>班型看清楚了，下一步做什么？</h3>
+              <p>查专业、测基础、做规划，结合自己的实际情况和老师沟通。</p>
+            </div>
+          </div>
+          <PlanningTools />
+        </div>
         <div className="c-final-address">
           <span>好老师升学帮 · 滨江校区</span>
           <p>杭州市滨江区滨文路426号 · 文苑大厦11楼</p>
