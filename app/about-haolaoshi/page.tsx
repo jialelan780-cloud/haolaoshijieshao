@@ -40,7 +40,7 @@ export default function AboutHaolaoshiPage() {
       <ConsultationSection
         index={2}
         title="专科不是终点，本科让未来多一些选择"
-        description="先看清不同路径，再决定自己的下一步。"
+        description="从就业、人才与租房补贴，到考公、考研、考编，把本科能带来的选择一项项讲清楚。"
         className="c-section-tint"
       >
         <EducationOpportunity />
@@ -55,7 +55,7 @@ export default function AboutHaolaoshiPage() {
       <ConsultationSection
         index={4}
         title="浙江专升本，到底怎么考？"
-        description="先确定类别和科目，再把准备、报名与录取的顺序理清。"
+        description="一次应届报考窗口、考前填志愿、两门统考科目：先把关键政策和升学节奏弄明白。"
         className="c-section-tint"
       >
         <ZhejiangPolicy />

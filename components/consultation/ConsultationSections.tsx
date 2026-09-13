@@ -1,8 +1,6 @@
 import {
   chapters,
   educationRows,
-  opportunities,
-  policySteps,
   serviceSteps,
   faculty,
 } from "@/data/consultation";
@@ -12,6 +10,7 @@ import { AiLearning, CoursePlans } from "@/components/PromoInteractive";
 import { GalleryTrigger, InlineDocument, InlinePanel } from "./LightboxGallery";
 import { ChapterLink } from "./PresentationMode";
 import type { ReactNode } from "react";
+import { EducationOpportunityGuide, ZhejiangPolicyGuide } from "./StudentGuide";
 export function ConsultationSection({
   index,
   title,
@@ -118,40 +117,7 @@ export function HeroNationalMap() {
   );
 }
 export function EducationOpportunity() {
-  return (
-    <>
-      <div className="c-opportunity-grid">
-        {opportunities.map((o, i) => (
-          <article key={o.title}>
-            <span className="c-opportunity-number">0{i + 1}</span>
-            <h3>{o.title}</h3>
-            <div>
-              <span>专科阶段</span>
-              <p>{o.before}</p>
-            </div>
-            <div className="c-opportunity-next">
-              <span>本科之后</span>
-              <p>{o.after}</p>
-            </div>
-            <small>{o.note}</small>
-          </article>
-        ))}
-      </div>
-      <div className="c-statement">
-        给未来增加选择，<em>也给自己更多准备的时间。</em>
-      </div>
-      <div className="c-citations">
-        <a
-          href="https://www.moe.gov.cn/srcsite/A15/moe_778/s3261/202509/t20250918_1413836.html"
-          target="_blank"
-          rel="noreferrer"
-        >
-          读研报考条件：教育部2026年招生规定 ↗
-        </a>
-        <span>就业、考公考编须逐项核对对应岗位要求。</span>
-      </div>
-    </>
-  );
+  return <EducationOpportunityGuide />;
 }
 export function EducationComparison() {
   return (
@@ -205,62 +171,7 @@ export function EducationComparison() {
   );
 }
 export function ZhejiangPolicy() {
-  return (
-    <>
-      <ol className="c-policy-flow">
-        {policySteps.map(([n, title, text]) => (
-          <li key={n}>
-            <span>{n}</span>
-            <strong>{title}</strong>
-            <p>{text}</p>
-          </li>
-        ))}
-      </ol>
-      <div className="c-policy-subjects">
-        <article>
-          <span className="c-eyebrow">语文方向</span>
-          <h3>
-            大学语文 <b>＋</b> 英语
-          </h3>
-          <div>
-            {["文史类", "法学类", "教育类", "艺术类"].map((c) => (
-              <span key={c}>{c}</span>
-            ))}
-          </div>
-        </article>
-        <article>
-          <span className="c-eyebrow">数学方向</span>
-          <h3>
-            高等数学 <b>＋</b> 英语
-          </h3>
-          <div>
-            {["理工类", "经管类", "农学类", "医学类"].map((c) => (
-              <span key={c}>{c}</span>
-            ))}
-          </div>
-        </article>
-      </div>
-      <div className="c-policy-key">
-        <strong>先确认专业类别，再确定考试科目。</strong>
-        <p>
-          同一专科专业可能对应多个类别，报名时只能选择其中1个。首次志愿与报名同步；考试后符合条件者再关注征求志愿。
-        </p>
-        <ChapterLink to="major-path">查查我的专业 →</ChapterLink>
-      </div>
-      <div className="c-citations">
-        <a
-          href="https://www.zjzs.net/col/col48/index.html"
-          target="_blank"
-          rel="noreferrer"
-        >
-          浙江省教育考试院 · 普通专升本政策 ↗
-        </a>
-        <span>
-          每科满分150分，总分300分；具体报考与考试安排以当年政策为准。
-        </span>
-      </div>
-    </>
-  );
+  return <ZhejiangPolicyGuide />;
 }
 export function LearningSystem() {
   return (
